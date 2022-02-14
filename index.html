@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Cauculadora de IMC</title>
+  
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+  <div id="digite">
+    
+    <p>Por favor, digite números, senão é impossível fazer a conta</p>
+    
+    <button id="botao-digite">Ok</button>
+    
+  </div>
+  
+  <header id="header">
+    
+    <input type="checkbox" name="check" id="check">
+    
+    <label for="check" id="label-check">
+      <img src="botao.png" alt="botão do menu" id="botao-hamburgao">
+    </label>
+    
+    <label for="check" id="x-check">
+      <img src="x.png" alt="ícone x" id="botao-x">
+    </label>
+    
+    <h1>Sua saúde</h1>
+    
+    <nav>
+      <ul>
+        <a id="login" href="">Login</a>
+        <a id="conversor" href="">Conversor de Moedas</a>
+      </ul>
+    </nav>
+    
+  </header>
+    
+  <main id="main">
+    <h2>IMC</h2>
+  
+    <h3>O que é IMC?</h3>
+  
+    <p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.</p>
+    <p>O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.</p>
+    <p>Quer saber seu IMC? Calcule abaixo e veja como você está de saúde.</p>
+    
+     <div id="pega-dados">
+    
+    
+    <form id="form-imc">
+      
+      <h3 id="tela-calcula">Calcule seu IMC</h3>
+      
+      <label for="input-altura" id="label-altura">Digite sua altura</label>
+      <input type="text" maxlength="3" placeholder="Ex: 1.80" id="input-altura" name="input-altura" required>
+      <label for="input-peso" id="label-peso">Digite seu peso</label>
+      <input type="text" maxlength="3" placeholder="Ex: 90" id="input-peso" name="input-peso" required>
+      <button id="botao-calcula">Calcular</button>
+      <button id="botao-limpa">Limpar</button>
+    </form>
+    
+  </div>
+  
+  <div id="blocos-escondidos">
+    
+    <h3 id="title-imc">Seu IMC é de </h3>
+    
+    <div class="magro">
+      <h4>Magro</h4>
+      <p>Você está abaixo do peso, isso pode ser desnutrição ou azar mesmo</p>
+    </div>
+    <div class="normal">
+      <h4>Normal</h4>
+      <p>Parabéns, você não é nem gordo nem magro, deve ser bem aceito na sociedade </p>
+    </div>
+    <div class="sobrepeso">
+      <h4>Sobrepeso</h4>
+      <p>Você está acima do peso ideal. Isso pode ser por conta da cerveja no fim de semana</p>
+    </div>
+    <div class="gordo">
+     <h4>Gordo</h4> 
+     <p>É, meu amigo, bom começar a fazer uma academia e parar de comer x-burguer.</p>
+    </div>
+    <div class="imenso">
+      <h4>Imenso</h4>
+      <p>Você é um caso sério. Procure um médico urgentemente</p>
+    </div>
+    <div class="tirano">
+      <h4>Tá me tirando?</h4>
+      <p>Eu sei que tu botou valor alto só pra ver o que ia aparecer, mas não tem nada depois disso.</p>
+    </div>
+    
+  </div>
+ 
+  </main>
+  
+  <footer>
+    <h4>Essa página foi produzida por Yuri Ficher</h4>
+    <p>Informações tiradas de <a href="https://www.programasaudefacil.com.br/calculadora-de-imc" target="_blank" rel="external">https://www.programasaudefacil.com.br/calculadora-de-imc</a></p>
+  </footer>
+  
+  <script src="main.js"></script>
+</body>
+</html>
